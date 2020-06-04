@@ -1,0 +1,11 @@
+#!/bin/bash
+fname="$(lsusb | grep 138a:0097 | awk '{print "/dev/bus/usb/"$2"/"$4}' | rev |\
+    cut -c 2- | rev)"
+if [ -z "$fname" ]
+then
+    echo "device 138a:0097 not found" > /dev/stderr
+else
+    /usr/share/identify_finger/usbreset "$fname" 1>& 2>& /dev/stderr
+    echo "usb connection reset successful" > /dev/stderr
+fi
+

@@ -1,0 +1,15 @@
+pkgbase = scan_finger
+	pkgdesc = xtrlock-pam patched with python-validity to use authentification with 138a:0097
+	pkgver = 0.1
+	pkgrel = 6
+	arch = any
+	license = GPL
+	makedepends = gcc
+	makedepends = make
+	depends = systemd
+	depends = glibc
+	source = scan_finger_src.tgz
+	md5sums = SKIP
+
+pkgname = scan_finger
+

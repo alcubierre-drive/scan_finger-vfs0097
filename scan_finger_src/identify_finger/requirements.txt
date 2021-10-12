@@ -1,4 +1,4 @@
-fastecdsa==1.7.4
+fastecdsa==2.1.2
 pycrypto==2.6.1
 pyusb==1.0.2
 
